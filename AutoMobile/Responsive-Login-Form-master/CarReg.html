@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="registration.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">New Customer</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Class Name</span>
+            <input type="text" placeholder="Enter class name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">ID</span>
+            <input type="text" placeholder="Identification Code" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Qualification</span>
+            <input type="text" placeholder="Enter your Qualification" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" placeholder="Enter your password" required>
+          </div>
+          
+          
+          
+          <div class="input_field select_option">
+            <select>
+              <option>Subject </option>
+              <option>English</option>
+              <option>Marathi</option>
+              <option>Hindi </option>
+              <option>Science</option>
+              <option>Mathamatic</option>
+              <option>History</option>
+              <option>Geography</option>
+              <option>Economics</option>
+              <option>Computer</option>
+              <option>Finance</option>
+              <option>Physical Education</option>
+              <option>Sanskrit</option>
+              <option>Physics</option>
+              <option>Chemistory</option>
+              <option>Biology</option>
+              <option>Account</option>
+            </select>
+            <div class="select_arrow"></div>
+          </div>
+          <div class="input-box">
+            <span class="details">ID Proof No</span>
+            <input type="text" placeholder="Enter your ID Proof" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" placeholder="Enter your Address" required>
+          </div>
+          <div class="input-box">
+            <span class="details">CV</span>
+            <input type="file" id="myFile" name="filename">
+          </div>
+          <div class="input-box">
+            <span class="details">DOB</span>
+            <input type="date" placeholder="Enter Birth Date" required>
+          </div>
+
+      
+        </div>
+        <div class="accound-details">
+          <input type="radio" name="account" id="dot-1">
+          <input type="radio" name="account" id="dot-2">
+          <input type="radio" name="account" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="account">Female</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="account">Male</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="account">Other</span>
+            </label>
+          </div>
+        </div>
+
+
+
+
+
+        <script type='text/javascript'>
+          function preview_image(event) 
+          {
+           var reader = new FileReader();
+           reader.onload = function()
+           {
+            var output = document.getElementById('output_image');
+            output.src = reader.result;
+           }
+           reader.readAsDataURL(event.target.files[0]);
+          }
+          </script>
+          <style>
+          body
+          {
+           width:100%;
+           margin:0 auto;
+           padding:0px;
+           font-family:helvetica;
+           background-color:#0B3861;
+          }
+          #wrapper
+          {
+           text-align:center;
+           margin:0 auto;
+           padding:0px;
+           width:300px;
+          }
+          #output_image
+          {
+           max-width:100px;
+          }
+          </style>
+          </head>
+          <body>
+          <div id="wrapper">
+            <div class="input-box">
+              <span class="details">Upload Photo</span>
+           <input type="file" accept="image/*" onchange="preview_image(event)">
+           <img id="output_image"/>
+           </div>
+          </div>
+
+
+
+
+
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+        <div class="button">
+          <input type="submit" value="Home">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
